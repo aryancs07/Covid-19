@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Name</title>
+    <link rel="stylesheet" type="text/css" href="Signup.css" >  
+    <script type="text/javascript" src="signup.js"></script> 
+ </head>
+ <body >
+
+    <div class="header">
+        <div class="header-logo">Name</div>
+        <div class="header-list">
+          <ul>
+            <li>ABOUT</li>
+            <li>LOCATION</li>
+            <li>CONTACT US</li>
+          </ul>
+
+        </div>
+      </div><br>
+     <!-- <img src="download.jpeg" class="image"> -->
+
+     <form action="#">
+         <div id="fullpage">
+             <h1>Fill the below Details</h1>
+             <table border="0">
+                 <tr>
+                     <td class="label_col">First Name: </td>
+                     <td class="tabel_col"><input name="firstName" id="firstName" type="text" onblur="validateFirstName(this.value)"></td>
+                     <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+                     
+                    </tr>
+                    <tr>
+                     <td class="label_col">Last Name: </td>
+                     <td class="tabel_col"><input name="lastName" id="lastName" type="text" onblur="validateLastName(this)"></td>
+                     <td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                     <td class="label_col">Phone Number </td>
+                     <td class="tabel_col"><input name="Phone" id="phone" type="text" onblur="validatePhone();" placeholder="xxx-xxx-xxxx"></td>
+                     <td class="feedback_col"><span id="phonePrompt">xxx-xxx-xxxx</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label_col">Alternate Phone Number </td>
+                        <td class="tabel_col"><input name="Phone" id="phone" type="text" onblur="validatePhone();" placeholder="xxx-xxx-xxxx"></td>
+                        <td class="feedback_col"><span id="phonePrompt">xxx-xxx-xxxx</span></td>
+                       </tr>
+
+                    <tr>
+                      <td class="label_col">Type:</td>
+                      <td class="tabel_col"><div class="col-75">
+                        <select id="typeof" name="Type">
+                          <option value="masks">Masks</option>
+                          <option value="handgloves">Handgloves</option>
+                          <option value="other">Other</option>
+            
+                        </select>
+                      </div>
+                     </tr>
+
+                    <tr>
+                     <td class="label_col">Order Quantity:</td>
+                     <td class="tabel_col"><input name="quantity" id="quantity" type="number" ></td>
+                     <td class="feedback_col"><span id="quantityPrompt">1&ndash;55</span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="label_col">Pincode</td>
+                      <td class="tabel_col"><input name="pincode" id="pincode" type="text" onblur="validatePincode(this.value);"></td>
+                      <td class="feedback_col"><span id="pincodePrompt">&nbsp;</span></td>
+                     </tr>
+                     
+                        <tr>
+                        <td class="label_col">Address: </td>
+                        <td class="tabel_col"><input name="address" id="address" type="text"></td>
+                        <td class="feedback_col"></td>
+                       </tr>
+
+                       <tr>
+                        <td class="label_col">Email id:</td>
+                        <td class="tabel_col"><input name="email" id="email" type="text" ></td>
+                        <td class="feedback_col"></td>
+                       </tr>
+                       <tr>
+                        <td class="label_col">Password</td>
+                        <td class="tabel_col"><input name="pass" id="pass" type="password" ></td>
+                        <td class="feedback_col"></td>
+                       </tr>
+                      <tr>
+                      <td class="Button" id="Button" colspan="3"><span class="buttonBG" onclick="calcOrder();">Order Now</span></td>
+                       </tr>
+                       <tr>
+                        <td>
+                        <p id="orderConfirm"></p>
+                      </td>
+                       </tr>
+                       </table>
+ 
+            </div>
+</form>
+ </body>
+ </html>
+ <!--code written by Aryan jain-->
